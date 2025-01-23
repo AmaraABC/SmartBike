@@ -6,11 +6,13 @@
     font-family: Helvetica;
 }
 
+/* Modification de la couleur de fond de l'entête de page et le pied de page */
 .smartbike-header,
 .smartbike-footer {
     background-color: rgb(41, 61, 48);
 }
 
+/* Stylisation de l'entête de page */
 .smartbike-header {
     padding: 1em 0;
     display: flex;
@@ -20,26 +22,86 @@
 
     a {
         color: white;
-        align-content: center;
     }
 
     strong {
-        font-size: 1.3em;
+        font-size: 2.5rem;
         margin: 0 1em;
     }
 
     .smartbike-links {
         min-width: 42%;
+        align-self: center;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        font-size: 1.55rem;
+    }
+
+    .smartbike-pages {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+
+        a {
+            font-size: 1.7rem;
+        }
+    }
+
+    /* Menu 'burger' */
+    .smartbike-burger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .burger-bar {
+        display: block;
+        background-color: white;
+        width: 1.2em;
+        height: 4px;
+        margin: .2em 0;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .4s ease-in-out;
+        align-self: center;
     }
 }
 
+/* Stylisation du pied de page */
 .smartbike-footer {
     color: white;
     padding: 2em 0;
     font-size: 1.5rem;
     text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1023px) {
+
+    /* Modifications liées au menu 'burger' */
+    .smartbike-burger {
+        display: block;
+    }
+
+    .smartbike-burger.active .burger-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .smartbike-burger.active .burger-bar:first-child {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .smartbike-burger.active .burger-bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .smartbike-pages {
+        position: fixed;
+        background-color: rgb(41, 61, 48);
+        left: -100%;
+        top: 111.34px;
+        flex-direction: column;
+        min-width: 100%;
+        text-align: center;
+        transition: .2s;
+    }
 }
