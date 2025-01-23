@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartBike, une entreprise experte dans la vente de vélos</title>
     <meta name="SmartBike" content="Vente de vélos">
@@ -19,8 +20,17 @@
         </a>
         <!-- Liens pour naviguer entre chaque page du site Smartbike -->
         <nav class="smartbike-links">
-            <a href="/index.php?page=homepage">Accueil</a>
-            <a href="/index.php?page=bikes">Vélos</a>
-            <a href="/index.php?page=contacts">Contact</a>
+            <!-- Liens -->
+            <div class="smartbike-pages">
+                <a href="/index.php?page=homepage">Accueil</a>
+                <a href="/index.php?page=bikes">Vélos</a>
+                <a href="/index.php?page=contacts">Contact</a>
+            </div>
+            <!-- Menu 'burger' pour les tablettes et téléphones -->
+            <div class="smartbike-burger">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </div>
         </nav>
     </header>
