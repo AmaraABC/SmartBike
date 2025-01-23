@@ -9,12 +9,37 @@
 .smartbike-header,
 .smartbike-footer {
     background-color: rgb(41, 61, 48);
+}
+
+.smartbike-header {
+    padding: 1em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 2rem;
 
     a {
         color: white;
+        align-content: center;
+    }
+
+    strong {
+        font-size: 1.3em;
+        margin: 0 1em;
+    }
+
+    .smartbike-links {
+        min-width: 42%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        font-size: 1.55rem;
     }
 }
 
 .smartbike-footer {
     color: white;
+    padding: 2em 0;
+    font-size: 1.5rem;
+    text-align: center;
 }
