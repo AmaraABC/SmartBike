@@ -22,15 +22,15 @@
         <nav class="smartbike-links">
             <!-- Liens -->
             <ul class="smartbike-pages">
-                <ul>
+                <li>
                     <a href="/index.php?page=homepage">Accueil</a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                     <a href="/index.php?page=bikes">Vélos</a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                     <a href="/index.php?page=contacts">Contact</a>
-                </ul>
+                </li>
             </ul>
 
             <!-- Menu 'burger' pour les tablettes et téléphones -->
