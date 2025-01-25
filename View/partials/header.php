@@ -21,11 +21,18 @@
         <!-- Liens pour naviguer entre chaque page du site Smartbike -->
         <nav class="smartbike-links">
             <!-- Liens -->
-            <div class="smartbike-pages">
-                <a href="/index.php?page=homepage">Accueil</a>
-                <a href="/index.php?page=bikes">Vélos</a>
-                <a href="/index.php?page=contacts">Contact</a>
-            </div>
+            <ul class="smartbike-pages">
+                <ul>
+                    <a href="/index.php?page=homepage">Accueil</a>
+                </ul>
+                <ul>
+                    <a href="/index.php?page=bikes">Vélos</a>
+                </ul>
+                <ul>
+                    <a href="/index.php?page=contacts">Contact</a>
+                </ul>
+            </ul>
+
             <!-- Menu 'burger' pour les tablettes et téléphones -->
             <div class="smartbike-burger">
                 <span class="burger-bar"></span>
