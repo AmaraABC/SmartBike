@@ -8,6 +8,7 @@ create table bikes(
     photo varchar not null,
     prix decimal(6, 2) not null,
     datePublication date not null,
+    contenu varchar(200),
     primary key(id_velo),
     unique(nom)
 );
