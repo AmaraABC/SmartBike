@@ -23,4 +23,10 @@ class bikeModel
     {
         return $this->bike->query("SELECT * from bikes order by datepublication desc")->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    // Requête qui renvoie un vélo en fonction de son identifiant
+    public function getBikeById($id)
+    {
+        return $this->bike->query("SELECT * from bikes where id_velo = '$id'");
+    }
 }
