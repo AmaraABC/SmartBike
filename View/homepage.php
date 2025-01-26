@@ -25,7 +25,7 @@
         <article class="smartbike-recent-release-img">
             <?php
             echo '<a href="/index.php?page=details&id_velo=' . $homepages['id_velo'] . '">
-                    <img src="' . $homepages['photo'] . '" alt="' . $homepages['contenu'] . '" height="241.2890625" width="362.5">
+                    <img src="' . $homepages['photo'] . '" alt="' . $homepages['contenu'] . '" height="266.25" width="400">
                     </a>';
             ?>
         </article>

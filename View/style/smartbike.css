@@ -139,10 +139,30 @@
     padding: 1vh 0;
 }
 
+/* Page consacrée aux détails d'un vélo */
+.smartbike-description {
+    margin: 4vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.smartbike-description-text {
+    p {
+        font-size: 2.5vh;
+        padding-bottom: 1.5vh;
+    }
+
+    h3 {
+        font-size: 2.5vh;
+        padding-top: 4vh;
+    }
+}
+
 /* Stylisation du pied de page */
 .smartbike-footer {
     color: white;
-    padding: 2em 0;
+    padding: 1.5em 0;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -227,5 +247,23 @@
     .smartbike-bike {
         width: 100%;
         text-align: center;
+    }
+
+    /* Page 'details' */
+    .smartbike-description {
+        display: block;
+        text-align: center;
+    }
+
+    .smartbike-description-text {
+        p {
+            font-size: 2.5vh;
+            padding-bottom: 1.5vh;
+        }
+
+        h3 {
+            font-size: 2.5vh;
+            padding-top: 4vh;
+        }
     }
 }
