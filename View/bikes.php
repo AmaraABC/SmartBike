@@ -5,7 +5,11 @@
     <?php foreach ($bikes as $bikes) { ?>
         <section class="smartbike-bike">
             <article class="smartbike-bike-img">
-                <img src="<?php echo $bikes['photo']; ?>" alt="<?php $bikes['contenu']; ?>" height="241.2890625" width="362.5">
+                <?php
+                echo '<a href="/index.php?page=details&id_velo=' . $bikes['id_velo'] . '">
+                    <img src="' . $bikes['photo'] . '" alt="' . $bikes['contenu'] . '" height="241.2890625" width="362.5">
+                    </a>';
+                ?>
             </article>
             <article class="smartbike-bike-text">
                 <h3>
