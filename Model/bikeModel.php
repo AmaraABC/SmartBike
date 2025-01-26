@@ -21,6 +21,6 @@ class bikeModel
     // Requête pour afficher tous les vélos présents dans la base de données 'SmartBike' à partir du plus récent
     public function getAllBikes()
     {
-        return $this->bike->query("SELECT * from bikes order by id_velo desc")->fetchAll(PDO::FETCH_ASSOC);
+        return $this->bike->query("SELECT * from bikes order by datepublication desc")->fetchAll(PDO::FETCH_ASSOC);
     }
 }
