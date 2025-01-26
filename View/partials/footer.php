@@ -3,6 +3,8 @@
         <p> &copy; SmartBike - <?php echo date('Y') ?></p>
     </div>
 </footer>
+
+<script src="/View/script/burger.js"></script>
 </body>
 
 </html>
