@@ -17,6 +17,12 @@ switch ($page) {
         $bikes->bikes();
         break;
 
+    case 'details':
+        echo "Bienvenue sur la page de présentation du produit sélectionné !";
+        $details = new bikeController;
+        $details->details();
+        break;
+
     case 'contacts':
         // echo "Bienvenue sur la page de contact du site SmartBike !\n";
 }
