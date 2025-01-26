@@ -179,7 +179,8 @@
 
     .smartbike-infos-img {
         text-align: center;
-        margin-top: 6.5vh;
+        margin: 6.5vh auto 5vh auto;
+
     }
 
     /* Images du site automatiquement responsive */
