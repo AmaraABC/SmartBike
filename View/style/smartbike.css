@@ -69,6 +69,50 @@
     margin: .5em 0;
 }
 
+/* Stylisation de la page d'accueil */
+.smartbike-welcome {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.smartbike-infos {
+    margin: 2em auto;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.smartbike-infos-text {
+    width: 50%;
+
+    h2,
+    p {
+        margin-bottom: 2vh;
+    }
+}
+
+.smartbike-recent-release {
+    text-align: center;
+}
+
+.smartbike-recent-release-name {
+    width: 90%;
+    margin: 5vh auto;
+}
+
+.smartbike-recent-release p {
+    margin: 3vh auto;
+}
+
+/* Délimiteur */
+.smartbike-delimiter {
+    width: 95%;
+    margin: 3vh auto;
+    border: .3vh dashed;
+    border-color: rgb(41, 61, 48);
+}
+
 /* Stylisation du pied de page */
 .smartbike-footer {
     color: white;
@@ -80,7 +124,7 @@
 /* Responsive Design */
 @media (max-width: 1023px) {
     .smartbike-logo {
-        margin-left: .4em;
+        margin-left: .5em;
     }
 
     /* Modifications liées au menu 'burger' */
@@ -92,7 +136,7 @@
         background-color: rgb(41, 61, 48);
         position: fixed;
         left: -100%;
-        top: 121px;
+        top: 110px;
         width: 100%;
         flex-direction: column;
         justify-content: center;
@@ -119,5 +163,28 @@
 
     .smartbike-burger.active .burger-bar:nth-child(3) {
         transform: translateY(-18px) rotate(-45deg);
+    }
+
+    /* Page d'accueil */
+    .smartbike-infos {
+        margin: 1vh auto;
+        display: block;
+    }
+
+    .smartbike-infos-text {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .smartbike-infos-img {
+        text-align: center;
+        margin-top: 6.5vh;
+    }
+
+    /* Images du site automatiquement responsive */
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
