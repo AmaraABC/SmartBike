@@ -18,10 +18,10 @@
 <!-- Affichage du vélo ajouté le plus récemment au catalogue -->
 <section class="smartbike-recent-release">
     <?php foreach ($homepage as $homepages) { ?>
-        <h3 class="smartbike-recent-release-name">
+        <h2 class="smartbike-recent-release-name">
             Voici notre nouveau produit :<br>
             <?php echo $homepages['nom']; ?>
-        </h3>
+        </h2>
         <article class="smartbike-recent-release-img">
             <img src="<?php echo $homepages['photo']; ?>" alt="<?php echo $homepages['contenu'] ?>" height="241.2890625" width="362.5">
         </article>
