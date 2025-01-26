@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     outline: none;
     font-family: Helvetica;
 }
@@ -14,56 +16,57 @@
 
 /* Stylisation de l'entête de page */
 .smartbike-header {
+    min-height: 120px;
     padding: 1em 0;
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
-    font-size: 2rem;
+}
+
+.smartbike-logo {
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 1em;
+    align-self: center;
+}
+
+.smartbike-links {
+    display: flex;
+    align-items: center;
+}
+
+.smartbike-pages {
+    display: flex;
+    align-self: center;
+
+    li {
+        margin-right: 3em;
+    }
 
     a {
+        font-size: 1.7rem;
         color: white;
     }
+}
 
-    strong {
-        font-size: 2.5rem;
-        margin: 0 1em;
-    }
+/* Menu 'burger' */
+.smartbike-burger {
+    display: none;
+    cursor: pointer;
+    align-self: center;
+    margin-right: 2em;
+    width: 20%;
+}
 
-    .smartbike-links {
-        min-width: 42%;
-        align-self: center;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
+.burger-bar {
+    display: block;
+    height: 6px;
+    width: 45px;
+    background-color: white;
+    transition: .5s ease;
+}
 
-    .smartbike-pages {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        width: 100%;
-
-        a {
-            font-size: 1.7rem;
-        }
-    }
-
-    /* Menu 'burger' */
-    .smartbike-burger {
-        display: none;
-        cursor: pointer;
-    }
-
-    .burger-bar {
-        display: block;
-        background-color: white;
-        width: 1.2em;
-        height: 4px;
-        margin: .2em 0;
-        -webkit-transition: all .3s ease-in-out;
-        transition: all .4s ease-in-out;
-        align-self: center;
-    }
+.burger-bar:nth-child(2) {
+    margin: .5em 0;
 }
 
 /* Stylisation du pied de page */
@@ -75,33 +78,46 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
+    .smartbike-logo {
+        margin-left: .4em;
+    }
 
     /* Modifications liées au menu 'burger' */
     .smartbike-burger {
         display: block;
     }
 
+    .smartbike-pages {
+        background-color: rgb(41, 61, 48);
+        position: fixed;
+        left: -100%;
+        top: 121px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        transition: .5s;
+
+        li {
+            margin-right: 0%;
+            margin-bottom: 1em;
+        }
+    }
+
+    .smartbike-pages.active {
+        left: 0;
+    }
+
+    .smartbike-burger.active .burger-bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
     .smartbike-burger.active .burger-bar:nth-child(2) {
         opacity: 0;
     }
 
-    .smartbike-burger.active .burger-bar:first-child {
-        transform: translateY(6px) rotate(45deg);
-    }
-
     .smartbike-burger.active .burger-bar:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
-    }
-
-    .smartbike-pages {
-        position: fixed;
-        background-color: rgb(41, 61, 48);
-        left: -100%;
-        top: 111.34px;
-        flex-direction: column;
-        min-width: 100%;
-        text-align: center;
-        transition: .2s;
+        transform: translateY(-18px) rotate(-45deg);
     }
 }
