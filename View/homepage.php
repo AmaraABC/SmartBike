@@ -23,7 +23,7 @@
             <?php echo $homepages['nom']; ?>
         </h2>
         <article class="smartbike-recent-release-img">
-            <img src="<?php echo $homepages['photo']; ?>" alt="<?php echo $homepages['contenu'] ?>" height="241.2890625" width="362.5">
+            <img src="<?php echo $homepages['photo']; ?>" alt="<?php echo $homepages['contenu']; ?>" height="241.2890625" width="362.5">
         </article>
         <article class="smartbike-flagship-text">
             <p><?php echo $homepages['contenu']; ?></p>
