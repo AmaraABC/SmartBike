@@ -25,4 +25,11 @@ class bikeController
         $homepage = $this->model->getLastReleasedBike();
         include('./View/homepage.php');
     }
+
+    // Transmission des informations à la page 'details'
+    public function details()
+    {
+        $details = $this->model->getBikeById($_GET['id_velo']);
+        include('./View/details.php');
+    }
 }
