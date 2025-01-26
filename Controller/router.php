@@ -18,7 +18,7 @@ switch ($page) {
         break;
 
     case 'details':
-        echo "Bienvenue sur la page de présentation du produit sélectionné !";
+        // echo "Bienvenue sur la page de présentation du vélo sélectionné !";
         $details = new bikeController;
         $details->details();
         break;
