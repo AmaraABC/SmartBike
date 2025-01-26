@@ -113,6 +113,32 @@
     border-color: rgb(41, 61, 48);
 }
 
+/* Page 'catalogue' */
+.smartbike-all-bikes {
+    width: 90%;
+    margin: 2vh auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .smartbike-delimiter {
+        display: none;
+    }
+}
+
+.smartbike-bike {
+    width: 40%;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.smartbike-bike-text h3 {
+    padding: 1vh 0;
+}
+
 /* Stylisation du pied de page */
 .smartbike-footer {
     color: white;
@@ -187,5 +213,19 @@
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* Page 'catalogue' */
+    .smartbike-all-bikes {
+        display: block;
+
+        .smartbike-delimiter {
+            display: block;
+        }
+    }
+
+    .smartbike-bike {
+        width: 100%;
+        text-align: center;
     }
 }
