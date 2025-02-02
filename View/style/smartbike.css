@@ -17,14 +17,13 @@
 /* Stylisation de l'entête de page */
 .smartbike-header {
     min-height: 120px;
-    padding: 1em 0;
     display: flex;
     justify-content: space-between;
 }
 
 .smartbike-logo {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-left: 1em;
     align-self: center;
 }
@@ -43,7 +42,7 @@
     }
 
     a {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         color: white;
     }
 }
@@ -128,7 +127,7 @@
 
 .smartbike-bike {
     width: 40%;
-    padding-bottom: 2vh;
+    padding: 2vh 0 3vw 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
