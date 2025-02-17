@@ -11,9 +11,9 @@
         <input type="text" id="firstname" name="firstname" placeholder="Prénom" minlength="2" maxlength="50" required>
         <br>
         <label for="e-mail" hidden>Email</label>
-        <input type="email" id="e-mail" name="e-mail" placeholder="Email" minlength="10" maxlength="70" required>
+        <input type="email" id="e-mail" name="e-mail" placeholder="Email" minlength="10" maxlength="100" required>
         <br>
-        <textarea name="message" id="message" cols="21" rows="7" maxlength="162" required></textarea>
+        <textarea name="message" id="message" cols="21" rows="7" maxlength="200" required></textarea>
         <br>
         <button type="submit">Envoyer</button>
     </form>

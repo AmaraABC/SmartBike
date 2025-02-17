@@ -25,4 +25,5 @@ switch ($page) {
 
     case 'contacts':
         // echo "Bienvenue sur la page de contact du site SmartBike !\n";
+        
 }

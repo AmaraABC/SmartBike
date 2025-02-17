@@ -7,5 +7,5 @@ class userModel {
 
     public function __construct() {
         $this->user = smartbike::connexion();
-    }
+    }    
 }
