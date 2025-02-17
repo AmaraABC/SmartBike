@@ -10,7 +10,8 @@ class userModel {
         $this->model = new userModel;
     }
 
-    public function contacts() {
-
+    // Transfert des informations vers la page 'contact'
+    public function contact() {
+        include('./View/contact.php');
     }
 }
