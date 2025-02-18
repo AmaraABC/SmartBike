@@ -20,6 +20,5 @@ create table users(
     prenom varchar(50) not null,
     email varchar(100) not null,
     contenu varchar(200) not null,
-    unique(email),
 	primary key(id_user)
 );
