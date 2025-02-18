@@ -15,6 +15,6 @@
         <br>
         <textarea name="message" id="message" cols="21" rows="7" maxlength="200" required></textarea>
         <br>
-        <button type="submit">Envoyer</button>
+        <button type="submit" name="send-btn" id="send-btn">Envoyer</button>
     </form>
 </div>
