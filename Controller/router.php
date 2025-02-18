@@ -1,5 +1,6 @@
 <?php
 include_once('bikeController.php');
+include_once('userController.php');
 
 // Définition d'une variable pour la redirection vers une page du site SmartBike
 $page = (isset($_GET['page']) ? $_GET['page'] : 'homepage');
@@ -25,5 +26,7 @@ switch ($page) {
 
     case 'contacts':
         // echo "Bienvenue sur la page de contact du site SmartBike !\n";
-        
+        $contact = new userController;
+        $contact->contact();
+        break;
 }

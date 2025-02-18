@@ -1,8 +1,8 @@
 <?php
-include('../Model/userModel.php');
+include_once('./Model/userModel.php');
 
 // Définition d'une classe réservée au traitement des informations des utilisateurs
-class userModel {
+class userController {
     private $model;
 
     // Récupération des informations issues de la classe 'userModel'
@@ -12,6 +12,7 @@ class userModel {
 
     // Transfert des informations vers la page 'contact'
     public function contact() {
+        $contact = $this->model->getUserRequest();
         include('./View/contact.php');
     }
 }
