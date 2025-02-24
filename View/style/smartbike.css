@@ -161,7 +161,18 @@
 /* Stylisation de la page 'Contact' */
 .smartbike-contact {
     text-align: center;
-    padding: 3vw 0;
+    padding: 2vw 0 3vw 0;
+}
+
+.smartbike-form {
+    input {
+        height: 6vh;
+        width: 45vw;
+        padding-left: 1vh;
+        margin-bottom: 2vh;
+        border-style: dashed;
+        border-width: 0.1em;
+    }
 }
 
 /* Stylisation du pied de page */
