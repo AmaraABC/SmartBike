@@ -1,5 +1,5 @@
 <!-- Page 'contact' du site Smartbike -->
-<h1 class="smartbike-welcome">N'hesitez pas à nous contacter !</h1>
+<h1 class="smartbike-welcome">Contactez-nous !</h1>
 <br>
 <!-- Création d'un formulaire pour prendre contact avec Smartbike -->
 <div class="smartbike-contact">
