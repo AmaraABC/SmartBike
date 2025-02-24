@@ -158,6 +158,12 @@
     }
 }
 
+/* Stylisation de la page 'Contact' */
+.smartbike-contact {
+    text-align: center;
+    padding: 3vw 0;
+}
+
 /* Stylisation du pied de page */
 .smartbike-footer {
     color: white;
