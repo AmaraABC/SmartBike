@@ -183,7 +183,19 @@
     }
 
     #send-btn {
-        padding: 2vw;
+        padding: 2vh 3vw;
+        border-style: dashed;
+        cursor: pointer;
+        border-color: rgb(41, 61, 48);
+        background-color: white;
+        font-weight: bold;
+        transition: .5s;
+    }
+
+    #send-btn:hover {
+        transition: .5s;
+        color: white;
+        background-color: rgb(41, 61, 48);
     }
 }
 
