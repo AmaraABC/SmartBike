@@ -187,8 +187,9 @@
         border-style: dashed;
         cursor: pointer;
         border-color: rgb(41, 61, 48);
+        border-width: .1em;
         background-color: white;
-        font-weight: bold;
+        font-weight: 500;
         transition: .5s;
     }
 
