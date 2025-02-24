@@ -13,7 +13,7 @@
         <label for="e-mail" hidden>Email</label>
         <input type="email" id="e-mail" name="e-mail" placeholder="Email" minlength="10" maxlength="100" required>
         <br>
-        <textarea name="message" id="message" cols="21" rows="7" maxlength="200" placeholder="Commentaires" required></textarea>
+        <textarea name="message" id="message" cols="75" rows="8" maxlength="200" placeholder="Commentaires" required></textarea>
         <br>
         <button type="submit" name="send-btn" id="send-btn">Envoyer</button>
     </form>
