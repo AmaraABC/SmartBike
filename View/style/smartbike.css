@@ -178,18 +178,20 @@
 
     textarea {
         padding: 1vh 0 0 1vh;
-        margin-bottom: 4vh;
+        margin-bottom: 3.5vh;
         width: 57vw;
     }
 
     #send-btn {
-        padding: 2vh 3vw;
+        padding: 2vh 3.5vw;
+        margin-bottom: 2.5vh;
         border-style: dashed;
         cursor: pointer;
         border-color: rgb(41, 61, 48);
         border-width: .1em;
         background-color: white;
         font-weight: 500;
+        font-size: .85rem;
         transition: .5s;
     }
 
